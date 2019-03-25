@@ -43,8 +43,8 @@ predictions = [round(value) for value in y_pred]
 accuracy = accuracy_score(y_test, predictions)
 print("Accuracy: %.2f%%" % (accuracy * 100.0))
 
-score = clf.score(X_test, y_test)
-print('Accuracy of sklearn: {0}%'.format(score*100))
+# score = clf.score(X_test, y_test)
+# print('Accuracy of sklearn: {0}%'.format(score*100))
 
 
 
