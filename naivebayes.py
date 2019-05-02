@@ -74,11 +74,12 @@ plot_confusion_matrix(cnf_matrix, classes=class_names,title='Confusion matrix, w
 plt.show()
 
 
-f = open('myCsvRow.csv', 'r')
-myCsvRow = f.read()
+f = open('addFile.csv')
+file_line = f.readlines()
+second_line = file_line[1].strip()
 
-def add_row(myCsvRow):
+def add_row(second_line):
     with open('data.csv', 'a') as f:
-        f.write(myCsvRow + "\n")
+        f.write(second_line + "\n")
 
-add_row(myCsvRow)
+add_row(second_line)
