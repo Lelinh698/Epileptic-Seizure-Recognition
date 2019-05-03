@@ -78,8 +78,8 @@ f = open('addFile.csv')
 file_line = f.readlines()
 second_line = file_line[1].strip()
 
-def add_row(second_line):
+def add_row(second_line, y):
     with open('data.csv', 'a') as f:
-        f.write(second_line + "\n")
+        f.write(second_line + "," + y + "\n")
 
-add_row(second_line)
+add_row(second_line, "1")
